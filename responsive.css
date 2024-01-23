@@ -1,0 +1,210 @@
+@media only screen and (max-width: 768px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    html,body{
+        height: 100%;
+        width: 100%;
+        background-color: rgb(76, 132, 123);
+        color: rgb(5, 37, 58);
+    }
+
+#home{
+    height: 100%;
+    width: 100%;
+}
+
+/* navbar */
+#nav{
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: fixed;
+    background-color: rgb(5, 37, 58);
+    color: whitesmoke;
+    z-index: 1;
+    visibility: hidden;
+}
+
+#navbox{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#headname{
+    padding: 10px 10px;
+    font-size: 26px;
+    font-weight: bold;
+    background-color: rgb(5, 37, 58);
+    visibility: visible;
+}
+
+#navlinks{
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+}
+
+#navlinks>h4{
+    width: 70%;
+    padding: 15px 20px;
+}
+
+#navlinks>h4>a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+#navlinks>h4>a:hover{
+    border-bottom: 2px solid whitesmoke;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    color: whitesmoke;
+}
+
+#mode{
+    width: 80%;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+    display: none;
+}
+
+#darkmode{
+    visibility: visible;
+}
+#lightmode{
+    visibility: hidden;
+}
+
+/* mainbox */
+
+#mainbox{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    padding-top: 90px;
+}
+
+#mainbox>#left{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#aboutpic{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pbox>img{
+    height: 160px;
+    width: 160px;
+    border: 1px solid rgb(5, 37, 58);
+    border-radius: 20%;
+    background-position: center;
+    
+}
+
+#mainbox>#right{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    color: rgb(5, 37, 58);
+}
+
+#right>#intro{
+    margin: 20px 10px;
+}
+
+#intro>h3{
+    font-size: 24px;
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+#intro>span{
+    font-size: 30px;
+    color: rgb(5, 37, 58);
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+#intro>#social{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-img{
+    height: 30px;
+    width: 30px;
+    margin-right: 0px;
+}
+
+.social-img:hover{
+    transform: translateY(-7px);
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+#cv{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+/* resuabiltiy */
+#cvbtn,
+#infobox>#more>#readmore, 
+#cbtn,
+#viewbtn{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid rgb(5, 37, 58);
+    border-radius: 20px;
+    color: rgb(5, 37, 58);
+}
+
+#cvbtn:hover, 
+#infobox>#more>#readmore:hover,
+.skillname:hover,
+#cbtn:hover,
+#viewbtn:hover{
+    background-color: rgb(5, 37, 58);
+    color: whitesmoke;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+    border-color: rgb(5, 37, 58);
+}
+
+
+
+
+
+
+
+
+
+}

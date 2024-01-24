@@ -201,5 +201,68 @@
 }
 
 
+/* about */
+
+#about{
+    height: 100vh;
+    width: 100%;
+    display: block;
+}
+
+#infobox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.title{
+    font-size: 38px;
+    font-weight: bold;
+    margin: 0px 0px;
+    color: whitesmoke;
+}
+
+#education>span,
+#skillbox>span{
+    font-size: 38px;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+#infobox>#subtitle{
+    margin-bottom: 25px;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+#infobox>#detail{
+    font-size: 21px;
+    font-weight: 500;
+    text-align: center;
+    margin: 20px 40px
+}
+
+#infobox>#more{
+    margin: 25px 0px;
+}
+
+#aboutpic{
+    display: none;
+}
+
+#aboutpic>img{
+    height: 400px;
+    width: 350px;
+    border-radius: 10%;
+    border: 1px solid rgb(5, 37, 58);
+    background-position: center;
+    margin-left: 50px;
+}
+
+
+
 
 }

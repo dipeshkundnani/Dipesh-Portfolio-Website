@@ -120,12 +120,12 @@ html,body{
     margin: 0 30px;
 }
 
-#intro>h3{
+#intro>#introtext>h3{
     font-size: 30px;
     font-weight: 400;
 }
 
-#intro>span{
+#intro>#introtext>span{
     font-size: 54px;
     font-weight: 500;
     color: rgb(5, 37, 58);

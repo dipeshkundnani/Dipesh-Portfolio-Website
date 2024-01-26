@@ -276,19 +276,15 @@ hr{
     margin-left: 100px;
 }
 
-#skillinfo{
-    height: 200px;
+#skillinfo {
+    height: max-content;
+    width: 430px;
+    display: flex;
+    flex-wrap: wrap;
     border: 2px solid rgb(5, 37, 58);
     border-radius: 20px;
-    flex-direction: column;
     padding: 10px;
-}
-
-#skillinfo, #skillinfo>span{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+  }
 
 .skillname{
     margin: 10px 15px;

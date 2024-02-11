@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -8,14 +9,11 @@
 html,body{
     height: 100%;
     width: 100%;
-    /* background-color: rgb(215, 233, 255); */
-    /* background-color: rgb(33,33,33); */
     background-color: rgb(76, 132, 123);
     color: rgb(5, 37, 58);
 }
 
 #home{
-    /* border: 2px solid red; */
     height: 100%;
     width: 100%;
 }
@@ -23,9 +21,10 @@ html,body{
 /* navbar */
 #nav{
     width: 100%;
-    height: 75px;
+    height: 6vw;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: fixed;
     background-color: rgb(5, 37, 58);
     color: whitesmoke;
@@ -34,31 +33,34 @@ html,body{
 
 #navbox{
     display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 5vw;
 }
 
 #headname{
     display: flex;
     align-items: center;
-    padding: 10px 30px;
-    font-size: 30px;
+    padding: 1vw 3vw;
+    font-size: 2vw;
     font-weight: bold;
 }
 
-#navlinks,#mode{
+#navlinks{
     display: flex;
     align-items: center;
 }
 
 #navlinks>h4{
-    padding: 15px 20px;
+    padding: 0.8vw 1.8vw;
 }
 
 #navlinks>h4>a{
     text-decoration: none;
     color: whitesmoke;
-    font-size: 20px;
+    font-size: 1.55vw;
     font-weight: 500;
-    padding-bottom: 5px;
+    padding-bottom: 0.5vw;
 }
 
 #navlinks>h4>a:hover{
@@ -68,29 +70,36 @@ html,body{
     color: whitesmoke;
 }
 
-#mode{
-    cursor: pointer;
-    padding: 15px 60px;
+#menuBtn{
+    display: none;
+    position: absolute;    
+    top: 18px;
+    right: 18px;
+    font-size: 3vw;
+    z-index: 2;
+    color: whitesmoke;
 }
 
-#darkmode{
-    visibility: visible;
-}
-#lightmode{
-    visibility: hidden;
+#closeBtn{
+    display: none;
+    position: absolute;    
+    top: 18px;
+    right: 18px;
+    font-size: 3vw;
+    z-index: 2;
+    color: whitesmoke;
 }
 
 /* mainbox */
 
 #mainbox{
     display: flex;
-    height: 100%;
+    height: calc(100vh - 4.5vw);
     width: 100%;
-    padding-top: 25px;
+    padding: 0 5vw;
 }
 
 #mainbox>#left, #aboutpic{
-    /* border: 2px solid black; */
     width: 45%;
     height: 100%;
     display: flex;
@@ -99,9 +108,8 @@ html,body{
 }
 
 .pbox>img{
-    height: 350px;
-    width: 350px;
-    /* background-color: tomato; */
+    height: 27vw;
+    width: 27vw;
     border: 1px solid rgb(5, 37, 58);
     border-radius: 50%;
     background-position: center;
@@ -109,7 +117,6 @@ html,body{
 }
 
 #mainbox>#right{
-    /* border: 2px solid black; */
     width: 55%;
     height: 100%;
     display: flex;
@@ -118,30 +125,30 @@ html,body{
 }
 
 #right>#intro{
-    margin: 0 30px;
+    margin: 0 1.5vw;
 }
 
-#intro>h3{
-    font-size: 30px;
+#intro>#introtext>h3{
+    font-size: 2vw;
     font-weight: 400;
 }
 
-#intro>span{
-    font-size: 54px;
+#intro>#introtext>span{
+    font-size: 4vw;
     font-weight: 500;
     color: rgb(5, 37, 58);
 }
 
 #intro>#social{
     width: 100%;
-    margin-top: 30px;
+    margin-top: 1.8vw;
     display: flex;
 }
 
 .social-img{
-    height: 30px;
-    width: 30px;
-    margin-right: 25px;
+    height: 2.5vw;
+    width: 2.5vw;
+    margin-right: 2vw;
 }
 
 .social-img:hover{
@@ -151,19 +158,19 @@ html,body{
 }
 
 #cv{
-    margin-top: 30px;
+    margin-top: 1.5vw;
 }
 /* resuabiltiy */
 #cvbtn,
 #infobox>#more>#readmore, 
 #cbtn,
 #viewbtn{
-    font-size: 20px;
+    font-size: 1.5vw;
     font-weight: bold;
-    padding: 10px 20px;
+    padding: 0.8vw 1.8vw;
     background-color: transparent;
     border: 2px solid rgb(5, 37, 58);
-    border-radius: 20px;
+    border-radius: 0.5vw;
     color: rgb(5, 37, 58);
 }
 
@@ -187,52 +194,55 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    padding: 0 4vw;
 }
 
 #infobox{
     display: flex;
-    width: 35%;
-    height: 50%;
-    /* border: 2px solid blue; */
+    width: 38%;
+    height: max-content;
     flex-direction: column;
 }
 
 .title{
-    font-size: 38px;
+    font-size: 3vw;
     font-weight: bold;
-    margin: 0px 0px;
     color: whitesmoke;
 }
 
-#education>span,
+#educationbox>span,
 #skillbox>span{
-    font-size: 38px;
-    font-weight: bold;
-    margin: 10px 0px;
+    margin: 1vw 0px;
 }
 
 #infobox>#subtitle{
-    margin-bottom: 25px;
-    font-size: 26px;
+    margin-bottom: 1.5vw;
+    font-size: 2vw;
     font-weight: 500;
 }
 
 #infobox>#detail{
-    font-size: 21px;
-    font-weight: 500;
+    font-size: 1.8vw;
+    font-weight: 400;
 }
 
 #infobox>#more{
-    margin: 25px 0px;
+    margin: 1.8vw 0;
+}
+
+#aboutpic{
+    height: 28vw;
+    width: 24vw;
+    margin-left: 3vw;
 }
 
 #aboutpic>img{
-    height: 400px;
-    width: 350px;
+    width: 100%;
+    height: 100%;
     border-radius: 10%;
     border: 1px solid rgb(5, 37, 58);
     background-position: center;
-    margin-left: 50px;
+    
 }
 
 /* skills */
@@ -243,104 +253,97 @@ hr{
 }
 
 #skills{
-    height: 100%;
+    height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    padding: 0 4vw;
 }
 
-#education{
-    /* border: 2px solid red; */
-    width: 25%;
-    height: 40%;
+#educationbox{
+    width: 35%;
+    height: 50%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    margin-left: 0px !important;
 }
 
 #eduinfo{
-    padding: 10px;
-    /* border: 2px solid red; */
-
+    padding: 1vw 1.5vw;
 }
 
 #eduinfo>p{
-    font-size: 22px;
-    font-weight: 500;
-    margin: 10px 0px;
+    font-size: 1.7vw;
+    font-weight: 400;
+    margin: 1vw 0;
     display: list-item;
+    color: rgb(5, 37, 58);
 }
 
-#skillbox, #education{
+#skillbox{
     display: flex;
     flex-direction: column;
-    align-items: flex-start !important;
-    margin-left: 100px;
-    /* border: 2px solid red; */
+    margin-left: 8vw;
 }
 
-#skillinfo{
-    height: 200px;
+#skillinfo {
+    height: max-content;
+    width: 31vw;
+    display: flex;
+    flex-wrap: wrap;
     border: 2px solid rgb(5, 37, 58);
-    border-radius: 20px;
-    flex-direction: column;
-    padding: 10px;
-}
-
-#skillinfo, #skillinfo>span{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border-radius: 1vw;
+    padding: 1vw;
 }
 
 .skillname{
-    margin: 10px 15px;
-    padding: 10px 20px;
+    margin: 0.8vw 1vw;
+    padding: 0.8vw 1.4vw;
     border: 2px solid rgb(5, 37, 58);
-    border-radius: 12px;
-    font-size: 20px;
+    border-radius: 1vw;
+    font-size: 1.5vw;
     font-weight: 500;
     color: rgb(5, 37, 58);
 }
 
 #projects, #contact{
-    height: 100%;
+    height: 100vh;
     width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-    padding-top: 80px;
+    padding-top: 6vw;
 }
 
-#projects>#head, #contact>.title{
+#projects .title, #contact .title{
     text-align: center;
-    margin: 20px 0px;
+    margin: 1.5vw 0;
 }
 
 #projectbox{
-    /* border: 2px solid red; */
-    padding: 20px;
+    padding: 1.5vw;
+    width: 100%;
     height: max-content;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .project{
-    height: 400px;
-    width: 300px;
-    border: 2px solid black;
-    border-radius: 25px;
+    height: 30vw;
+    width: 22vw;
+    border: 2px solid rgb(5, 37, 58);
+    border-radius: 1vw;
+    overflow: hidden;
 }
 
 .pimg{
-    /* border: 2px solid red; */
     height: 80%;
 }
 
 .pview{
-    /* border: 2px solid cyan; */
     height: 20%;
     display: flex;
     align-items: center;
@@ -351,38 +354,89 @@ hr{
 /* contact */
 
 #contact{
+    height: 97vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding-top: 4vw;
+}
+
+#contactbox{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#contact #contactinfo, #contactform{
+    width: 40%;
+    height: 100%;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#contact>.title{
-    margin: 10px 0px;
+#contactinfo{
+    flex-direction: column;
+    height: 80% !important;
+    padding-top: -10%;
 }
 
-#contact>#form{
-    /* border: 2px solid black; */
-    padding: 10px;
+#contactinfo #infobox{
+    width: 50%;
+    height: max-content;
+}
+
+#contactinfo .cbox{
+    margin: 0.8vw 0;
+    width: max-content;
+    display: flex;
+    align-items: center;
+}
+
+#contactinfo .cbox i{
+    color: rgb(5, 37, 58);
+    font-size: 2vw;
+    padding-right: 0.5vw;
+}
+
+#contactinfo p{
+    font-size: 1.8vw;
+    color: rgb(5, 37, 58);
+    font-weight: 400;
+    text-align: left;
+}
+
+#contactform #form{
+    padding: 0.8vw 1vw;
+    width: 27vw;
     display: flex;
     flex-direction: column;
 }
 
 label{
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 1.4vw;
+    font-weight: 600;
 }
 
 input, #message{
-    width: 400px;
-    height: 40px;
-    margin: 8px 0px;
-    border-radius: 10px;
+    width: 100%;
+    height: 3vw;
+    margin: 0.5vw 0;
+    border-radius: 0.5vw;
     border: none;
-    font-size: 20px;
-    padding: 5px 8px;
+    font-size: 1.2vw;
+    font-weight: 500;
+    padding: 0.4vw 0.7vw;
+    color: rgb(5, 37, 58);
 }
 
 #message{
-    height: 120px;
+    height: 8vw;
+    padding: 0.4vw 0.7vw;
+    resize: none;
 }
 
 input:focus, #message:focus{
@@ -390,19 +444,26 @@ input:focus, #message:focus{
 }
 
 #cbtn{
-    margin: 10px 0px;
-    border-radius: 15px;
-    margin-bottom: 40px;
+    margin: 0.8vw 0;
+    padding: 0.5vw 0;
+    border-radius: 0.5vw;
+    font-size: 1.4vw;
+    font-weight: 500;
 }
+
+/* copyright */
 
 #copyright{
     background-color: rgb(5, 37, 58);
-    color: whitesmoke;
-    height: 60px;
-    padding: 20px 0px;
+    height: 4vw;
+    padding: 1.7vw 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #copyright>p{
-    font-size: 18px;
+    font-size: 1.5vw;
     text-align: center;
+    color: whitesmoke;
 }
